@@ -1,0 +1,5 @@
+#config 
+config
+
+#Node modules folder
+node_modules/

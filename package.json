@@ -1,0 +1,26 @@
+{
+  "name": "bitcoin_tweeter_bot",
+  "version": "1.0.0",
+  "description": "A twitter bot which tweets the price of Bitcoin every 4 hours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Denny Sam",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "http": "0.0.0",
+    "twit": "^2.2.9"
+  },
+
+  "now": {
+    "env":{
+      "consumer_key": "@consumer_key",  
+      "consumer_secret": "@consumer_secret",
+      "access_token": "@access_token",  
+      "access_token_secret": "@access_token_secret"
+    }
+  }
+}
