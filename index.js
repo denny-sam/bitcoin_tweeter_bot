@@ -19,7 +19,6 @@ getRate = () => {
     var re = /([0-9]*\,*)*/
     var usd, inr, gbp, eur = 0;
     base_url = "https://api.coindesk.com/v1/bpi/currentprice/"
-
     axios.get(base_url+"INR.json")
         .then((resp) => {
             usd = re.exec(resp.data.bpi.USD.rate)[0];
