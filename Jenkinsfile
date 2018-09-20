@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('jenkins-integration-test') {
       steps {
-        echo 'Hello from the other side. By adelle! Jag changa'
+        echo 'Hello from the other side.'
       }
     }
   }
