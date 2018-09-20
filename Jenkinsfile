@@ -1,10 +1,13 @@
-pipeline {
-  agent any
-  stages {
-    stage('jenkins-integration-test') {
-      steps {
-        echo 'Hello from the other side. jag'
-      }
+pipeline { 
+    agent any 
+    stages {
+        stage('Unit tests') { 
+            steps { 
+                sh 'pip install virtualenv'
+                sh 'virtualenv env -p python3.5'
+                sh '. env/bin/activate'
+                echo 'pytest testing again'
+            }
+        }
     }
-  }
 }
