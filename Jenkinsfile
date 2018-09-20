@@ -3,14 +3,17 @@ pipeline {
     stages {
       stage('Unit tests') { 
                   steps { 
-                sh '''
-                pip install virtualenv
-                virtualenv env -p python3.5
-                . env/bin/activate
-
-                    pip install -r requirements.txt
-                    '''
-
+               sh """
+                    echo ${SHELL}
+                    [ -d venv ] && rm -rf venv
+                    #virtualenv --python=python3.6 venv
+                    virtualenv venv
+                    #. venv/bin/activate
+                    export PATH=${VIRTUAL_ENV}/bin:${PATH}
+                    pip install --upgrade pip
+                    pip install -r requirements.txt -r dev-requirements.txt
+                    make clean
+                """
 
 
 }
