@@ -4,8 +4,8 @@ pipeline {
       stage('Unit tests') { 
                     steps { 
 
-      withPythonEnv('/usr/bin/python3') {
                         sh 'pip install virtualenv'
+      withPythonEnv('/usr/bin/python3') {
                 sh 'virtualenv env -p python3.5'
                 sh '. env/bin/activate'
 
