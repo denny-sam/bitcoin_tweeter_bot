@@ -7,9 +7,7 @@ pipeline {
                 pip install virtualenv
                 pip show virtualenv
                 echo $PATH
-                ls
-                pwd
-                virtualenv env -p python3.5
+                /var/lib/jenkins/.local/lib/python2.7/site-packages/virtualenv env -p python 3.5
                 . env/bin/activate
                 pip install -r requirements.txt
                 '''
