@@ -1,18 +1,15 @@
 pipeline { 
     agent any 
     stages {
-      stage('Unit tests') { 
-                  steps { 
+        stage('Unit tests') { 
+            steps { 
                 sh '''
                 python -m virtualenv -p python3 env 
                 . env/bin/activate
-                pip install -r requirements.txt
-                pytest
+                env/bin/pip install -r requirements/production.txt
+                pytest --verbose
                 '''
-
-
-
-}
-      }
+            }
         }
     }
+}
