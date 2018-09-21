@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                 python -m virtualenv -p python3 env 
                 . env/bin/activate
-                env/bin/pip install -r requirements/production.txt
+                env/bin/pip install -r requirements.txt
                 pytest --verbose
                 '''
             }
