@@ -5,6 +5,7 @@ pipeline {
                   steps { 
                 sh '''
                 pip install virtualenv
+                pip show virtualenv
                 echo $PATH
                 ls
                 pwd
