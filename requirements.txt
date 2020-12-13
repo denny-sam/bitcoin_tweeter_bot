@@ -1,0 +1,44 @@
+pytz==2018.4  # https://github.com/stub42/pytz
+python-slugify==1.2.5  # https://github.com/un33k/python-slugify
+Pillow==5.2.0  # https://github.com/python-pillow/Pillow
+argon2-cffi==18.1.0  # https://github.com/hynek/argon2_cffi
+redis>=2.10.5  # https://github.com/antirez/redis
+
+# Django
+# ------------------------------------------------------------------------------
+django==2.0.6  # pyup: < 2.1  # https://www.djangoproject.com/
+django-environ==0.4.4  # https://github.com/joke2k/django-environ
+django-model-utils==3.1.2  # https://github.com/jazzband/django-model-utils
+django-allauth==0.36.0  # https://github.com/pennersr/django-allauth
+django-crispy-forms==1.7.2  # https://github.com/django-crispy-forms/django-crispy-forms
+django-redis==4.9.0  # https://github.com/niwinz/django-redis
+whitenoise==4.0  # https://github.com/evansd/whitenoise
+
+# Django REST Framework
+djangorestframework==3.8.2  # https://github.com/encode/django-rest-framework
+coreapi==2.3.3  # https://github.com/core-api/python-client
+
+# AWS & Mechanical Turk
+boto==2.48.0
+boto3==1.7.59
+
+# DJANGO-JET
+django-jet==1.0.7
+
+
+# Celery
+celery==4.2.0
+
+# pytest
+#-------------------------------------------------------------------------------------
+pytest==3.6.0
+pytest-django==3.2.1
+pytest-cov==2.5.1
+django-coverage-plugin==1.5.0
+selenium==3.13.0
+
+# HEROKU API
+heroku3==3.3.0
+
+# Request
+requests==2.19.1
